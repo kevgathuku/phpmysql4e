@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title> Bob's Order Form </title>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+</head>
+<body>
+
+  <!-- .container is main centered wrapper -->
+  <div class="container">
+
+  <form action="processorder.php" method="post">
+    <div class="row">
+      <div class="three columns"><h4> Item </h4></div>
+      <div class="four columns"><h4> Quantity </h4></div>
+    </div>
+
+    <div class="row">
+      <div class="three columns">
+        <label for="tireqty"> Tires </label>
+      </div>
+      <div class="four columns">
+        <input class="u-full-width" size="3" maxlength="3" name="tireqty" id="tireqty" type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="three columns">
+        <label for="oilqty"> Oil </label>
+      </div>
+      <div class="four columns">
+        <input class="u-full-width" size="3" maxlength="3" name="oilqty" id="oilqty" type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="three columns">
+        <label for="sparkqty"> Spark Plugs </label>
+      </div>
+      <div class="four columns">
+        <input class="u-full-width" size="3" maxlength="3" name="sparkqty" id="sparkqty" type="text">
+      </div>
+    </div>
+
+    <input value="Submit Order" type="submit">
+
+  </form>
+
+</div>
+
+</body>
+</html>
